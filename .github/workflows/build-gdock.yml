@@ -50,7 +50,7 @@ jobs:
 
     - name: Clone source code
       run: |
-        git clone https://github.com/coolsnowwolf/lede lede
+        git clone http://baige.cloud:30000/caojin/yuanjin-openwrt.git R9.11.9
 
     - name: Update feeds
       run: cd lede && ./scripts/feeds update -a
