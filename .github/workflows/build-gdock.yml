@@ -52,7 +52,8 @@ jobs:
     - name: Clone source code
       run: |
          git clone https://github.com/coolsnowwolf/lede lede
-
+	 git checkout ae7a5d7
+	 git checkout -b branch
     - name: Update feeds
       run: cd lede && ./scripts/feeds update -a
 
